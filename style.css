@@ -1,39 +1,84 @@
+/* Modernize the font and increase size */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: #f4f4f4;
+    color: #333;
 }
 
+/* Make the header and sections more dynamic */
 header {
     text-align: center;
-    background-color: #4CAF50;
+    background: linear-gradient(to right, #4CAF50, #2E7D32);
     color: white;
-    padding: 10px 0;
+    padding: 30px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 header h1 {
-    margin: 0;
+    margin-bottom: 10px;
+    font-size: 3em;
 }
 
-header p {
-    margin: 5px 0;
+header nav {
+    margin-top: 20px;
 }
 
 nav a {
     color: white;
-    padding: 10px 20px;
+    padding: 12px 30px;
+    margin: 5px;
+    background-color: #388E3C;
+    border-radius: 5px;
     text-decoration: none;
-    display: inline-block;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
 }
 
 nav a:hover {
-    background-color: #45a049;
+    background-color: #2E7D32;
 }
 
+/* Improve spacing and use more screen width */
 section {
-    margin: 20px;
-    padding: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Customize section headers */
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Adjust contact section and details */
+.contact {
+    font-size: 1.2em;
+}
+
+/* Add smooth transitions and hover effects */
+a {
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #388E3C;
+}
+
+/* Ensure the footer also looks modern */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2E7D32;
+    color: white;
+    margin-top: 50px;
 }

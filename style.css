@@ -8,6 +8,8 @@ body {
     line-height: 1.5; /* Adjusted line height */
     margin: 0;
     padding: 0;
+    height: 100vh; /* Set body height to viewport height */
+    overflow: hidden; /* Prevent scrolling */
     background: linear-gradient(135deg, #FFEB3B, #FFC107); /* Dynamic yellow gradient background */
     color: #333; /* Dark Gray */
 }
@@ -16,9 +18,7 @@ body {
 header {
     text-align: center;
     background: rgba(255, 255, 255, 0.9); /* White background with transparency */
-    padding: 60px 0; /* Increased padding */
-    position: sticky;
-    top: 0;
+    padding: 30px 20px; /* Adjusted padding */
     width: 100%;
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
@@ -27,44 +27,48 @@ header {
 /* Highlighted Headings */
 h1 {
     color: #FF4081; /* Pink */
-    font-size: 4em; /* Increased font size */
-    margin: 20px 0;
+    font-size: 3.5em; /* Increased font size */
+    margin: 10px 0;
 }
 
 h2 {
     color: #FF5722; /* A different color for section headings */
-    margin: 30px 0;
+    margin: 20px 0;
     padding: 10px;
     border-bottom: 2px solid #FFC107; /* Yellow underline */
     background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque white */
     border-radius: 5px; /* Rounded corners */
-    animation: fadeIn 1s ease-in-out;
 }
 
 /* Section Styles */
-section {
-    max-width: 1200px; /* Maintain max width */
-    margin: 40px auto;
-    padding: 40px;
-    background-color: white; /* White background for sections */
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+.card {
+    max-width: 800px; /* Limit card width */
+    margin: 15px; /* Reduced margin to fit content */
+    padding: 20px; /* Maintain padding */
+    background: rgba(255, 255, 255, 0.9); /* Card background */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px; /* Rounded corners */
-    animation: fadeIn 1s ease-in-out; /* Fade-in animation for sections */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add shadow transition */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
 }
 
 /* Links in Navigation */
 nav a {
     color: #FF4081; /* Pink */
-    padding: 15px 30px; /* Increased padding */
+    padding: 10px 20px; /* Reduced padding */
     margin: 5px;
     border-radius: 5px;
     transition: background-color 0.4s, transform 0.4s; /* Added transform */
-    font-size: 1.5em; /* Increased font size */
+    font-size: 1.3em; /* Adjusted font size */
 }
 
 nav a:hover {
     background-color: #FFC107; /* Yellow on hover */
-    transform: scale(1.1); /* Slight scale effect on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
 }
 
 /* Resume Download Button */
@@ -81,20 +85,24 @@ nav a:hover {
 
 .resume-download a:hover {
     background-color: #D5006D; /* Darker Pink */
-    transform: scale(1.1); /* Slight scale effect on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
 }
 
 /* Social Media Icons */
+.social-links {
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
 .social-links a {
-    margin: 0 15px;
+    margin: 0 15px; /* Adjust margin for spacing */
     font-size: 3em; /* Increased icon size */
-    color: #FFFFFF; /* White */
+    color: #FFEB3B; /* Bright Yellow for icons */
     transition: transform 0.4s, color 0.4s;
 }
 
 .social-links a:hover {
     transform: scale(1.2);
-    color: #FFC107; /* Yellow on hover */
+    color: #FFC107; /* Darker Yellow on hover */
 }
 
 /* Fade-in animation */
@@ -106,17 +114,4 @@ nav a:hover {
 /* Smooth Scroll */
 html {
     scroll-behavior: smooth;
-}
-
-/* Card Style for Sections */
-.card {
-    padding: 20px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
 }

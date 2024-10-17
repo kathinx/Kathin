@@ -1,4 +1,4 @@
-/* General body styles */
+/* General body styles for light mode (default) */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -164,3 +164,53 @@ nav {
     nav a {
         margin-bottom: 15px;
         padding: 12px 20px;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: linear-gradient(135deg, #2c3e50 0%, #4a4a4a 100%); /* Darker gradient for dark mode */
+        color: #ecf0f1; /* Light text */
+    }
+
+    header h1 {
+        color: #ecf0f1; /* Light title */
+    }
+
+    .experience-item {
+        background-color: rgba(50, 50, 50, 0.9); /* Dark background for experience items */
+        color: #ecf0f1; /* Light text */
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7); /* Darker shadow */
+    }
+
+    .experience-item:hover {
+        background-color: rgba(50, 50, 50, 1); /* Slightly lighter on hover */
+    }
+
+    .popup {
+        background: linear-gradient(135deg, #2c3e50 0%, #4a4a4a 100%); /* Darker popup background */
+        color: #ecf0f1; /* Light text */
+    }
+
+    .popup h3 {
+        color: #e74c3c; /* Red title in dark mode */
+    }
+
+    .nav-box {
+        background: linear-gradient(135deg, #8e44ad, #2980b9); /* Vibrant nav background in dark mode */
+    }
+
+    .nav-box:hover {
+        background: linear-gradient(135deg, #9b59b6, #3498db); /* Brighter hover effect */
+    }
+
+    .close-popup {
+        background-color: #e74c3c;
+        color: white;
+    }
+
+    .close-popup:hover {
+        background-color: #c0392b;
+    }
+}

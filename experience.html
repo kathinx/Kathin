@@ -3,29 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Experience - Kajendran G</title>
+    <link rel="stylesheet" href="experience-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Header with Navigation -->
     <header>
         <h1>Experience</h1>
         <nav>
-            <a href="index.html">
-                <i class="fa fa-home"></i> Home
-            </a>
-            <a href="education.html">
-                <i class="fa fa-graduation-cap"></i> Education
-            </a>
-            <a href="skills.html">
-                <i class="fa fa-cogs"></i> Skills
-            </a>
+            <div class="nav-box">
+                <a href="index.html">
+                    <i class="fas fa-home"></i> Home
+                </a>
+            </div>
+            <div class="nav-box">
+                <a href="education.html">
+                    <i class="fas fa-graduation-cap"></i> Education
+                </a>
+            </div>
+            <div class="nav-box">
+                <a href="skills.html">
+                    <i class="fas fa-lightbulb"></i> Skills
+                </a>
+            </div>
         </nav>
     </header>
 
     <section>
-        <!-- Experience List with Popups -->
         <div class="experience-item" onclick="togglePopup('popup-evs')">
             <h2>EVS Industrial Automation - Madurai, India (Feb 2024 - Present)</h2>
             <p>Electrical Engineer</p>
@@ -34,12 +40,12 @@
             <div class="popup-content">
                 <h3>EVS Industrial Automation - Work Details</h3>
                 <ul>
-                    <li>Plc control panel wiring and commissioning</li>
+                    <li>PLC control panel wiring and commissioning</li>
                     <li>Programming, automation support</li>
                     <li>BOM making and SLD wiring</li>
                     <li>Manage budgets and resources</li>
                     <li>HMI, SCADA designing</li>
-                    <li>Skills: Wincc, Tia portal, GXworks, WPLSoft, HMI, VFD, SERVO</li>
+                    <li>Skills: WinCC, TIA Portal, GXWorks, WPLSoft, HMI, VFD, SERVO</li>
                 </ul>
                 <button class="close-popup" onclick="togglePopup('popup-evs')">Close</button>
             </div>

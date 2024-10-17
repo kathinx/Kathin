@@ -1,0 +1,161 @@
+/* General body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); /* Dynamic gradient background */
+    color: #333;
+    position: relative;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Full-width layout on desktop */
+header, .experience-item, nav {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    z-index: 1; /* Ensures header is above background */
+    position: relative;
+}
+
+/* Header title */
+header h1 {
+    font-size: 3.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* Navigation bar styling */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    z-index: 1;
+    position: relative;
+}
+
+.nav-box {
+    margin: 10px;
+    width: 150px; /* Ensures uniform width */
+    height: 60px; /* Ensures uniform height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ff9966, #ff5e62); /* Colorful navigation box */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-box a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.nav-box:hover {
+    background: linear-gradient(135deg, #ff5e62, #ff9966);
+    transform: translateY(-5px);
+}
+
+/* Experience item styling */
+.experience-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+    position: relative;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.experience-item h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #e74c3c;
+}
+
+.experience-item p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #2c3e50;
+}
+
+/* Popup styling */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.popup.active {
+    display: block;
+}
+
+.popup h3 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+.popup ul {
+    padding-left: 20px;
+}
+
+.popup li {
+    margin-bottom: 10px;
+}
+
+/* Close button for popups */
+.close-popup {
+    background-color: #388E3C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.close-popup:hover {
+    background-color: #2E7D32;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-bottom: 15px;
+        padding: 12px 20px;
+    }
+
+    .experience-item {
+        padding: 15px;
+    }
+}

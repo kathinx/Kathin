@@ -62,19 +62,58 @@ nav a {
     transition: background-color 0.4s, transform 0.4s;
 }
 
+/* Navigation Box Styles */
+.nav-box {
+    display: inline-block; /* Display the boxes inline */
+    padding: 15px;
+    margin: 10px; /* Space between the boxes */
+    background-color: #f1f1f1; /* Light background color */
+    border-radius: 10px; /* Rounded corners for the box */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.nav-box:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    background-color: #FFEB3B; /* Bright background color on hover */
+}
+
+/* Navigation Links */
+nav a {
+    color: #333; /* Default text color */
+    padding: 10px;
+    display: inline-flex; /* Align icon and text */
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+    font-size: 1.5em;
+    transition: color 0.3s ease-in-out;
+}
+
 nav a i {
-    margin-right: 8px; /* Space between icon and text */
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.5em;
+    transition: color 0.3s ease-in-out; /* Smooth transition for icon color */
 }
 
-nav a:hover {
-    background-color: #FFC107; /* Change background on hover */
-    transform: scale(1.05);
+/* Icon and Text Colors */
+.nav-box:nth-child(1) a i {
+    color: #FF4081; /* Pink for Experience icon */
 }
 
-/* Resume Download Button */
-.resume-download {
-    margin: 20px 0;
+.nav-box:nth-child(2) a i {
+    color: #FFC107; /* Yellow for Education icon */
 }
+
+.nav-box:nth-child(3) a i {
+    color: #4CAF50; /* Green for Skills icon */
+}
+
+/* Hover Effect for Icons and Text */
+.nav-box:hover a i, .nav-box:hover a {
+    color: #333; /* Text and icon change to dark gray on hover */
+}
+
 
 .resume-download a {
     display: inline-flex;

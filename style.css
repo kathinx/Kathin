@@ -18,7 +18,7 @@ body {
 header {
     text-align: center;
     background: rgba(255, 255, 255, 0.9); /* White background with transparency */
-    padding: 30px 20px; /* Adjusted padding */
+    padding: 40px 20px; /* Adjusted padding */
     width: 100%;
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
@@ -27,7 +27,7 @@ header {
 /* Highlighted Headings */
 h1 {
     color: #FF4081; /* Pink */
-    font-size: 1.5em; /* Increased font size */
+    font-size: 3.5em; /* Increased font size */
     margin: 10px 0;
 }
 
@@ -72,9 +72,8 @@ nav a:hover {
 }
 
 /* Resume Download Button */
-/* Resume Download Button */
 .resume-download {
-    margin: 20px 0; /* Added margin to separate from navigation */
+    margin: 20px 0; /* Add margin to separate from navigation */
 }
 
 .resume-download a {
@@ -94,13 +93,6 @@ nav a:hover {
     transform: scale(1.05); /* Slight scale effect on hover */
 }
 
-/* Adjust icon size */
-.resume-download a i {
-    font-size: 0.9em; /* Icon size */
-    margin-right: 5px; /* Space between icon and text */
-}
-
-/* Social Media Icons */
 /* Social Media Icons */
 .social-links {
     margin: 20px 0; /* Add some margin for spacing */
@@ -111,16 +103,11 @@ nav a:hover {
     font-size: 3.5em; /* Increased icon size for visibility */
     color: #FFEB3B; /* Bright Yellow for icons */
     transition: transform 0.4s, color 0.4s;
-    display: inline-block; /* Make sure they are inline blocks */
-    padding: 10px; /* Add padding around the icons */
-    border-radius: 50%; /* Make them circular */
-    background: rgba(0, 0, 0, 0.1); /* Subtle background for contrast */
 }
 
 .social-links a:hover {
     transform: scale(1.2);
     color: #FFC107; /* Darker Yellow on hover */
-    background: rgba(0, 0, 0, 0.2); /* Darker background on hover */
 }
 
 /* Fade-in animation */

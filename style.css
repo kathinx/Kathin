@@ -8,6 +8,8 @@ body {
     line-height: 1.5; /* Adjusted line height */
     margin: 0;
     padding: 0;
+    height: 100vh; /* Set body height to viewport height */
+    overflow: hidden; /* Prevent scrolling */
     background: linear-gradient(135deg, #FFEB3B, #FFC107); /* Dynamic yellow gradient background */
     color: #333; /* Dark Gray */
 }
@@ -16,9 +18,8 @@ body {
 header {
     text-align: center;
     background: rgba(255, 255, 255, 0.9); /* White background with transparency */
-    padding: 60px 0; /* Increased padding */
-    position: sticky;
-    top: 0;
+    padding: 40px 20px; /* Adjusted padding */
+    position: relative; /* Changed to relative for layout */
     width: 100%;
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
@@ -44,8 +45,8 @@ h2 {
 /* Section Styles */
 section {
     max-width: 1200px; /* Maintain max width */
-    margin: 40px auto;
-    padding: 40px;
+    margin: 20px auto; /* Reduced margin to fit content */
+    padding: 20px; /* Reduced padding */
     background-color: white; /* White background for sections */
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px; /* Rounded corners */
@@ -88,13 +89,13 @@ nav a:hover {
 .social-links a {
     margin: 0 15px;
     font-size: 3em; /* Increased icon size */
-    color: #FFFFFF; /* White */
+    color: #FFEB3B; /* Bright Yellow for icons */
     transition: transform 0.4s, color 0.4s;
 }
 
 .social-links a:hover {
     transform: scale(1.2);
-    color: #FFC107; /* Yellow on hover */
+    color: #FFC107; /* Darker Yellow on hover */
 }
 
 /* Fade-in animation */

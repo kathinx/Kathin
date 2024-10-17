@@ -22,8 +22,7 @@ body {
 header {
     text-align: center;
     background: rgba(255, 255, 255, 0.9); /* White background with transparency */
-    padding: 30px 20px; /* Adjusted padding */
-    position: relative; /* Changed to relative for layout */
+    padding: 20px; /* Adjusted padding */
     width: 100%;
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
@@ -39,32 +38,30 @@ h1 {
 h2 {
     color: #FF5722; /* A different color for section headings */
     margin: 20px 0;
-    padding: 10px;
+    padding: 5px;
     border-bottom: 2px solid #FFC107; /* Yellow underline */
     background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque white */
     border-radius: 5px; /* Rounded corners */
-    animation: fadeIn 1s ease-in-out;
 }
 
 /* Section Styles */
 .card {
-    max-width: 800px; /* Limit card width */
+    max-width: 600px; /* Limit card width */
     margin: 15px; /* Reduced margin to fit content */
     padding: 20px; /* Maintain padding */
-    background: linear-gradient(to bottom right, #ffffff, rgba(255, 255, 255, 0.8)); /* Gradient for depth */
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.9); /* Card background */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px; /* Rounded corners */
-    animation: fadeIn 1s ease-in-out; /* Fade-in animation for sections */
 }
 
 /* Links in Navigation */
 nav a {
     color: #FF4081; /* Pink */
-    padding: 15px 25px; /* Increased padding */
+    padding: 10px 20px; /* Reduced padding */
     margin: 5px;
     border-radius: 5px;
     transition: background-color 0.4s, transform 0.4s; /* Added transform */
-    font-size: 1.4em; /* Adjusted font size */
+    font-size: 1.3em; /* Adjusted font size */
 }
 
 nav a:hover {
@@ -75,12 +72,12 @@ nav a:hover {
 /* Resume Download Button */
 .resume-download a {
     display: inline-block;
-    padding: 15px 30px; /* Increased padding */
+    padding: 10px 20px; /* Reduced padding */
     background-color: #FF4081; /* Pink */
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.5em; /* Increased font size */
+    font-size: 1.3em; /* Adjusted font size */
     transition: background-color 0.4s, transform 0.4s;
 }
 
@@ -95,8 +92,8 @@ nav a:hover {
 }
 
 .social-links a {
-    margin: 0 15px; /* Add margin between icons */
-    font-size: 3em; /* Adjusted icon size */
+    margin: 0 10px; /* Adjust margin for spacing */
+    font-size: 3em; /* Increased icon size */
     color: #FFEB3B; /* Bright Yellow for icons */
     transition: transform 0.4s, color 0.4s;
 }
@@ -115,17 +112,4 @@ nav a:hover {
 /* Smooth Scroll */
 html {
     scroll-behavior: smooth;
-}
-
-/* Card Style for Sections */
-.card {
-    padding: 20px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
 }

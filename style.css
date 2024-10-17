@@ -152,4 +152,28 @@ nav a i {
 /* Smooth Scroll */
 html {
     scroll-behavior: smooth;
+
+/* General styles already added earlier... */
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;  /* Reduce the size of the H1 text */
+    }
+
+    nav a {
+        font-size: 1em;  /* Smaller font size for navigation links */
+        padding: 10px 20px;  /* Reduce padding */
+        display: inline-block;
+        width: 100px;  /* Uniform width */
+        height: 40px;  /* Uniform height */
+        line-height: 40px;  /* Vertical alignment for text */
+        text-align: center;  /* Center-align text */
+        margin: 5px;  /* Spacing between boxes */
+    }
+
+    nav a:hover {
+        background-color: #2E7D32;  /* Keep the hover effect */
+    }
+}
 }

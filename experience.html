@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -17,18 +16,58 @@
             <a href="skills.html">Skills</a>
         </nav>
     </header>
+
     <section>
-        <h2>EVS Industrial Automation - Electrical Engineer</h2>
-        <p><strong>Feb 2024 - Present</strong></p>
-        <p>Plc control panel wiring and commissioning, programming, HMI, SCADA designing, BOM making, etc..</p>
+        <!-- Experience List with Popups -->
+        <div class="experience-item" onclick="togglePopup('popup-evs')">
+            <h2>EVS Industrial Automation - Madurai, India (Feb 2024 - Present)</h2>
+            <p>Electrical Engineer</p>
+        </div>
+        <div class="popup" id="popup-evs">
+            <h3>EVS Industrial Automation - Work Details</h3>
+            <ul>
+                <li>Plc control panel wiring and commissioning</li>
+                <li>Programming, automation support</li>
+                <li>BOM making and SLD wiring</li>
+                <li>Manage budgets and resources</li>
+                <li>HMI, SCADA designing</li>
+                <li>Skills: Wincc, Tia portal, GXworks, WPLSoft, HMI, VFD, SERVO</li>
+            </ul>
+            <button class="close-popup" onclick="togglePopup('popup-evs')">Close</button>
+        </div>
 
-        <h2>TVS Srichakra Limited - Electrical Maintenance</h2>
-        <p><strong>Mar 2023 - Feb 2024</strong></p>
-        <p>Inspecting electrical systems, troubleshooting, scheduling maintenance, installing equipment.</p>
+        <div class="experience-item" onclick="togglePopup('popup-tvs')">
+            <h2>TVS Srichakra Limited - Madurai, India (Mar 2023 - Feb 2024)</h2>
+            <p>Electrical - Maintenance</p>
+        </div>
+        <div class="popup" id="popup-tvs">
+            <h3>TVS Srichakra Limited - Work Details</h3>
+            <ul>
+                <li>Inspecting electrical systems</li>
+                <li>Troubleshooting system failures</li>
+                <li>Planning and scheduling maintenance</li>
+                <li>Installing and modifying systems</li>
+                <li>Improving production process</li>
+                <li>Skills: PLC programming, Team Lead, Supervising</li>
+            </ul>
+            <button class="close-popup" onclick="togglePopup('popup-tvs')">Close</button>
+        </div>
 
-        <h2>Prayagaa Enterprises Pvt. Ltd. - Trainee Engineer</h2>
-        <p><strong>May 2022 - Mar 2023</strong></p>
-        <p>Tender documents, quotations, BOQs, pre/post tender queries, client coordination.</p>
+        <div class="experience-item" onclick="togglePopup('popup-prayagaa')">
+            <h2>Prayagaa Enterprises Pvt Ltd - Chennai, India (May 2022 - Mar 2023)</h2>
+            <p>Trainee Engineer - Tendering Dept.</p>
+        </div>
+        <div class="popup" id="popup-prayagaa">
+            <h3>Prayagaa Enterprises - Work Details</h3>
+            <ul>
+                <li>Examining tender documents, BOQs, SLD</li>
+                <li>Preparation of quotations and invoices</li>
+                <li>Addressing pre and post-tender queries</li>
+                <li>Coordination with clients and engineers</li>
+                <li>Skills: MS Office, Documentation, SLD</li>
+            </ul>
+            <button class="close-popup" onclick="togglePopup('popup-prayagaa')">Close</button>
+        </div>
     </section>
 </body>
 </html>

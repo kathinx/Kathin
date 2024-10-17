@@ -74,11 +74,11 @@ nav a:hover {
 /* Resume Download Button */
 .resume-download a {
     display: inline-block;
-    padding: 15px 30px; /* Increased padding */
+    padding: 10px 20px; /* Increased padding */
     background-color: #FF4081; /* Pink */
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 3px;
     font-size: 1.5em; /* Increased font size */
     transition: background-color 0.4s, transform 0.4s;
 }

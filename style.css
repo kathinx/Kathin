@@ -1,18 +1,18 @@
-/* Modernize the font and increase size */
+//* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    background: #f4f4f4; /* Light Gray */
+    color: #333; /* Dark Gray */
 }
 
-/* Make the header and sections more dynamic */
+/* Header with Gradient */
 header {
     text-align: center;
-    background: linear-gradient(to right, #4CAF50, #2E7D32);
+    background: linear-gradient(to right, #4CAF50, #2E7D32); /* Green Gradient */
     color: white;
     padding: 30px 0;
     position: sticky;
@@ -21,31 +21,7 @@ header {
     z-index: 1000;
 }
 
-header h1 {
-    margin-bottom: 10px;
-    font-size: 3em;
-}
-
-header nav {
-    margin-top: 20px;
-}
-
-nav a {
-    color: white;
-    padding: 12px 30px;
-    margin: 5px;
-    background-color: #388E3C;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.1em;
-    transition: background-color 0.3s;
-}
-
-nav a:hover {
-    background-color: #2E7D32;
-}
-
-/* Improve spacing and use more screen width */
+/* Section Styles */
 section {
     max-width: 1200px;
     margin: 40px auto;
@@ -54,138 +30,64 @@ section {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Customize section headers */
-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+/* Headings */
+h1, h2 {
+    color: #2E7D32; /* Dark Green */
+    animation: fadeIn 2s ease-in-out;
 }
 
-/* Adjust contact section and details */
-.contact {
-    font-size: 1.2em;
-}
-
-/* Add smooth transitions and hover effects */
-a {
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: #388E3C;
-}
-
-/* Ensure the footer also looks modern */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #2E7D32;
+/* Links */
+nav a {
     color: white;
-    margin-top: 50px;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #388E3C; /* Slightly darker green */
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s; /* Added transform */
 }
 
-
-/* Style for social media icons */
-.social-links {
-    margin: 20px 0;
+nav a:hover {
+    background-color: #2E7D32; /* Change to Dark Green on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
 }
 
-.social-links a {
-    margin: 0 15px;
-    font-size: 2em;
-    color: white;
-    transition: color 0.3s;
-}
-
-.social-links a:hover {
-    color: #4CAF50; /* Change to green on hover */
-}
-
-/* Style for social media icons */
-.social-links {
-    margin: 20px 0;
-}
-
-.social-links a {
-    margin: 0 15px;
-    font-size: 2em;
-    color: white;
-    transition: color 0.3s;
-}
-
-.social-links a:hover {
-    color: #4CAF50; /* Change to green on hover */
-}
-
-/* Style for resume download button */
-.resume-download {
-    margin-top: 20px;
-}
-
+/* Resume Download Button */
 .resume-download a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #4CAF50; /* Light Green */
     color: white;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1.2em;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .resume-download a:hover {
-    background-color: #388E3C;
+    background-color: #388E3C; /* Darker Green */
+    transform: scale(1.05); /* Slight scale effect on hover */
 }
 
+/* Social Media Icons */
+.social-links a {
+    margin: 0 15px;
+    font-size: 2em;
+    color: white;
+    transition: transform 0.3s, color 0.3s;
+}
 
-/* Fade-in animation for headings and paragraphs */
+.social-links a:hover {
+    transform: scale(1.2);
+    color: #4CAF50; /* Change to Light Green on hover */
+}
+
+/* Fade-in animation */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
-/* Apply fade-in to headings */
-h1, h2 {
-    animation: fadeIn 2s ease-in-out;
-}
-
-/* Apply fade-in to paragraphs */
-p {
-    animation: fadeIn 2s ease-in-out;
-    animation-delay: 0.5s;
-    animation-fill-mode: both;
-}
-
-/* Add hover animation for social media icons */
-.social-links a {
-    margin: 0 15px;
-    font-size: 2em;
-    color: white;
-    transition: transform 0.3s ease-in-out, color 0.3s;
-}
-
-.social-links a:hover {
-    transform: scale(1.2); /* Scale the icon slightly on hover */
-    color: #4CAF50; /* Change color to green on hover */
-}
-
-/* Add hover animation to the resume download button */
-.resume-download a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.resume-download a:hover {
-    background-color: #388E3C; /* Darker green on hover */
-    transform: scale(1.1); /* Slightly scale the button on hover */
-}
-
-/* Optional: Add a smooth scroll effect */
+/* Smooth Scroll */
 html {
     scroll-behavior: smooth;
 }

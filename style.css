@@ -1,152 +1,133 @@
+
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap');
 
 /* Global Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    line-height: 1.5;
+    font-family: 'Roboto', sans-serif; /* Changed font to Roboto */
+    font-size: 24px; /* Increased base font size */
+    line-height: 1.5; /* Adjusted line height */
     margin: 0;
     padding: 0;
+    height: 100vh; /* Set body height to viewport height */
+    overflow: hidden; /* Prevent scrolling */
     background: linear-gradient(135deg, #FFEB3B, #FFC107); /* Dynamic yellow gradient background */
-    color: #333;
-    overflow-y: auto; /* Allow vertical scrolling */
+    color: #333; /* Dark Gray */
 }
 
 /* Header Styles */
 header {
     text-align: center;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 40px 0; /* Adjusted padding to remove side gaps */
-    width: 100%; /* Ensure full-width */
+    background: rgba(255, 255, 255, 0.9); /* White background with transparency */
+    padding: 30px 20px; /* Adjusted padding */
+    width: 100%;
     z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
 }
 
 /* Highlighted Headings */
 h1 {
-    color: #FF4081;
-    font-size: 4em;
-    margin: 20px 0;
+    color: #FF4081; /* Pink */
+    font-size: 1.5em; /* Increased font size */
+    margin: 10px 0;
 }
 
 h2 {
-    color: #FF5722;
-    margin: 30px 0;
+    color: #FF5722; /* A different color for section headings */
+    margin: 20px 0;
     padding: 10px;
-    border-bottom: 2px solid #FFC107;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 5px;
+    border-bottom: 2px solid #FFC107; /* Yellow underline */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque white */
+    border-radius: 5px; /* Rounded corners */
 }
 
 /* Section Styles */
 .card {
-    width: 90%; /* Set the width to cover most of the screen */
-    margin: 15px auto; /* Center the card horizontally */
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
+    max-width: 800px; /* Limit card width */
+    margin: 15px; /* Reduced margin to fit content */
+    padding: 20px; /* Maintain padding */
+    background: rgba(255, 255, 255, 0.9); /* Card background */
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add shadow transition */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
 }
 
 /* Links in Navigation */
-/* Navigation Links */
 nav a {
-    color: #FF4081; /* Default color */
-    padding: 10px 20px;
+    color: #FF4081; /* Pink */
+    padding: 10px 20px; /* Reduced padding */
     margin: 5px;
     border-radius: 5px;
-    display: inline-flex; /* Flexbox for aligning icon and text */
-    align-items: center;
-    font-size: 1.3em;
-    transition: background-color 0.4s, transform 0.4s;
+    transition: background-color 0.4s, transform 0.4s; /* Added transform */
+    font-size: 1.3em; /* Adjusted font size */
 }
 
-/* Navigation Box Styles */
-.nav-box {
-    display: inline-block; /* Display the boxes inline */
-    padding: 15px;
-    margin: 10px; /* Space between the boxes */
-    background-color: #f1f1f1; /* Light background color */
-    border-radius: 10px; /* Rounded corners for the box */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+nav a:hover {
+    background-color: #FFC107; /* Yellow on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
 }
 
-.nav-box:hover {
-    transform: translateY(-10px); /* Lift effect on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-    background-color: #FFEB3B; /* Bright background color on hover */
+/* Resume Download Button */
+/* Resume Download Button */
+.resume-download {
+    margin: 20px 0; /* Added margin to separate from navigation */
 }
-
-/* Navigation Links */
-nav a {
-    color: #333; /* Default text color */
-    padding: 10px;
-    display: inline-flex; /* Align icon and text */
-    align-items: center;
-    text-decoration: none; /* Remove underline */
-    font-size: 1.5em;
-    transition: color 0.3s ease-in-out;
-}
-
-nav a i {
-    margin-right: 10px; /* Space between icon and text */
-    font-size: 1.5em;
-    transition: color 0.3s ease-in-out; /* Smooth transition for icon color */
-}
-
-/* Icon and Text Colors */
-.nav-box:nth-child(1) a i {
-    color: #FF4081; /* Pink for Experience icon */
-}
-
-.nav-box:nth-child(2) a i {
-    color: #FFC107; /* Yellow for Education icon */
-}
-
-.nav-box:nth-child(3) a i {
-    color: #4CAF50; /* Green for Skills icon */
-}
-
-/* Hover Effect for Icons and Text */
-.nav-box:hover a i, .nav-box:hover a {
-    color: #333; /* Text and icon change to dark gray on hover */
-}
-
 
 .resume-download a {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #FF4081;
+    display: inline-flex; /* Use inline-flex to align icon and text */
+    align-items: center; /* Center icon and text vertically */
+    padding: 10px 20px; /* Decreased padding for smaller size */
+    background-color: #FF4081; /* Pink */
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1.2em;
+    font-size: 1.2em; /* Adjusted font size */
     transition: background-color 0.4s, transform 0.4s;
 }
 
 .resume-download a:hover {
-    background-color: #D5006D;
-    transform: scale(1.05);
+    background-color: #D5006D; /* Darker Pink */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Adjust icon size */
+.resume-download a i {
+    font-size: 0.9em; /* Icon size */
+    margin-right: 5px; /* Space between icon and text */
 }
 
 /* Social Media Icons */
+/* Social Media Icons */
 .social-links {
-    margin: 20px 0;
+    margin: 20px 0; /* Add some margin for spacing */
 }
 
 .social-links a {
-    margin: 0 15px;
-    font-size: 3.5em;
-    color: #FFEB3B;
+    margin: 0 15px; /* Adjust margin for spacing */
+    font-size: 3.5em; /* Increased icon size for visibility */
+    color: #FFEB3B; /* Bright Yellow for icons */
     transition: transform 0.4s, color 0.4s;
+    display: inline-block; /* Make sure they are inline blocks */
+    padding: 10px; /* Add padding around the icons */
+    border-radius: 50%; /* Make them circular */
+    background: rgba(0, 0, 0, 0.1); /* Subtle background for contrast */
 }
 
 .social-links a:hover {
     transform: scale(1.2);
-    color: #FFC107;
+    color: #FFC107; /* Darker Yellow on hover */
+    background: rgba(0, 0, 0, 0.2); /* Darker background on hover */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 /* Smooth Scroll */

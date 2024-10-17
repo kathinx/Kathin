@@ -155,99 +155,33 @@ html {
 
 /* General styles already added earlier... */
 
-/* Responsive styles for mobile devices */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;  /* Reduce the size of the H1 text */
-    }
+/* General styles already defined... */
 
-    nav a {
-        font-size: 1em;  /* Smaller font size for navigation links */
-        padding: 10px 20px;  /* Reduce padding */
-        display: inline-block;
-        width: 100px;  /* Uniform width */
-        height: 40px;  /* Uniform height */
-        line-height: 40px;  /* Vertical alignment for text */
-        text-align: center;  /* Center-align text */
-        margin: 5px;  /* Spacing between boxes */
-    }
-
-    nav a:hover {
-        background-color: #2E7D32;  /* Keep the hover effect */
-    }
-}
-    /* General styles as mentioned earlier... */
-
-/* Experience Item Styling */
-.experience-item {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px;
-    margin: 20px 0;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 5px;
-}
-    
-.experience-item:hover {
-    background-color: #388E3C;
-}
-
-.experience-item h2 {
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 1.3em;
-}
-
-.experience-item p {
-    display: inline-block;
-    color: #E8F5E9;
-    font-size: 1.1em;
-}
-
-/* Popup Styling */
-.popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    color: #333;
-    padding: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    z-index: 10;
-    border-radius: 10px;
-}
-
-.popup h3 {
-    margin-top: 0;
-    color: #4CAF50;
-}
-
-.popup ul {
-    padding-left: 20px;
-}
-
-.popup li {
+/* Reduce the header font size */
+header h1 {
+    font-size: 2.5em;  /* Slightly smaller than before */
     margin-bottom: 10px;
 }
 
-.close-popup {
-    background-color: #388E3C;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
+/* Navigation bar styling same as index.html */
+nav {
+    margin-top: 20px;
 }
 
-.close-popup:hover {
+nav a {
+    color: white;
+    padding: 12px 30px;
+    margin: 5px;
+    background-color: #388E3C;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
     background-color: #2E7D32;
 }
 
-.popup.active {
-    display: block;
-}
 
 }

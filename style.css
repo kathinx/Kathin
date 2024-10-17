@@ -135,3 +135,57 @@ footer {
 .resume-download a:hover {
     background-color: #388E3C;
 }
+
+
+/* Fade-in animation for headings and paragraphs */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Apply fade-in to headings */
+h1, h2 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Apply fade-in to paragraphs */
+p {
+    animation: fadeIn 2s ease-in-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+/* Add hover animation for social media icons */
+.social-links a {
+    margin: 0 15px;
+    font-size: 2em;
+    color: white;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2); /* Scale the icon slightly on hover */
+    color: #4CAF50; /* Change color to green on hover */
+}
+
+/* Add hover animation to the resume download button */
+.resume-download a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.resume-download a:hover {
+    background-color: #388E3C; /* Darker green on hover */
+    transform: scale(1.1); /* Slightly scale the button on hover */
+}
+
+/* Optional: Add a smooth scroll effect */
+html {
+    scroll-behavior: smooth;
+}

@@ -7,6 +7,13 @@ body {
     color: #333;
 }
 
+/* Full-width layout on desktop */
+header, .card, nav {
+    max-width: 1000px;
+    margin: 0 auto; /* Center content */
+    padding: 0 20px; /* Ensure padding on smaller screens */
+}
+
 /* Header styles */
 header {
     text-align: center;
@@ -31,9 +38,15 @@ header p {
     background-color: rgba(255, 255, 255, 0.9);
     margin: 20px auto;
     padding: 20px;
-    max-width: 800px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add hover effect for cards */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .card h2 {
@@ -63,11 +76,12 @@ header p {
     font-size: 2em;
     color: #2c3e50;
     margin: 0 15px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-links a:hover {
     color: #e74c3c; /* Color change on hover */
+    transform: scale(1.1); /* Slightly enlarge icons on hover */
 }
 
 /* Resume download button */
@@ -80,11 +94,12 @@ header p {
     text-decoration: none;
     font-size: 1.2em;
     border-radius: 8px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .resume-download a:hover {
     background-color: #27ae60;
+    transform: translateY(-3px);
 }
 
 /* Navigation bar styling */
@@ -96,22 +111,24 @@ nav {
 
 .nav-box {
     margin: 10px;
-}
-
-nav a {
-    background-color: rgba(255, 255, 255, 0.9);
-    color: #2c3e50;
-    padding: 15px 25px;
+    width: 150px; /* Ensures uniform width */
+    height: 60px; /* Ensures uniform height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
-    text-decoration: none;
-    font-size: 1.2em;
-    display: inline-block;
+    background-color: rgba(255, 165, 0, 0.9); /* Colorful navigation box */
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-nav a:hover {
-    background-color: #f39c12;
+.nav-box a {
     color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.nav-box:hover {
+    background-color: #f39c12;
     transform: translateY(-5px);
 }
 

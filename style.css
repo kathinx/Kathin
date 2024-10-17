@@ -1,107 +1,122 @@
-/* Modernize the font and increase size */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap');
+
+/* Global Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif; /* Changed font to Roboto */
+    font-size: 24px; /* Increased base font size */
+    line-height: 1.5; /* Adjusted line height */
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    height: 100vh; /* Set body height to viewport height */
+    overflow: hidden; /* Prevent scrolling */
+    background: linear-gradient(135deg, #FFEB3B, #FFC107); /* Dynamic yellow gradient background */
+    color: #333; /* Dark Gray */
 }
 
-/* Make the header and sections more dynamic */
+/* Header Styles */
 header {
     text-align: center;
-    background: linear-gradient(to right, #4CAF50, #2E7D32);
-    color: white;
-    padding: 30px 0;
-    position: sticky;
-    top: 0;
+    background: rgba(255, 255, 255, 0.9); /* White background with transparency */
+    padding: 40px 20px; /* Adjusted padding */
     width: 100%;
     z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
 }
 
-header h1 {
-    margin-bottom: 10px;
-    font-size: 3em;
+/* Highlighted Headings */
+h1 {
+    color: #FF4081; /* Pink */
+    font-size: 3.5em; /* Increased font size */
+    margin: 10px 0;
 }
 
-header nav {
-    margin-top: 20px;
+h2 {
+    color: #FF5722; /* A different color for section headings */
+    margin: 20px 0;
+    padding: 10px;
+    border-bottom: 2px solid #FFC107; /* Yellow underline */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly more opaque white */
+    border-radius: 5px; /* Rounded corners */
 }
 
+/* Section Styles */
+.card {
+    max-width: 800px; /* Limit card width */
+    margin: 15px; /* Reduced margin to fit content */
+    padding: 20px; /* Maintain padding */
+    background: rgba(255, 255, 255, 0.9); /* Card background */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add shadow transition */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Links in Navigation */
 nav a {
-    color: white;
-    padding: 12px 30px;
+    color: #FF4081; /* Pink */
+    padding: 10px 20px; /* Reduced padding */
     margin: 5px;
-    background-color: #388E3C;
     border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.1em;
-    transition: background-color 0.3s;
+    transition: background-color 0.4s, transform 0.4s; /* Added transform */
+    font-size: 1.3em; /* Adjusted font size */
 }
 
 nav a:hover {
-    background-color: #2E7D32;
+    background-color: #FFC107; /* Yellow on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
 }
 
-/* Improve spacing and use more screen width */
-section {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 40px;
-    background-color: white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+/* Resume Download Button */
+.resume-download {
+    margin: 20px 0; /* Add margin to separate from navigation */
 }
 
-/* Customize section headers */
-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-/* Adjust contact section and details */
-.contact {
-    font-size: 1.2em;
-}
-
-/* Add smooth transitions and hover effects */
-a {
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: #388E3C;
-}
-/* General styles already added earlier... */
-
-/* Responsive styles for mobile devices */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2em;  /* Reduce the size of the H1 text */
-    }
-
-    nav a {
-        font-size: 1em;  /* Smaller font size for navigation links */
-        padding: 10px 20px;  /* Reduce padding */
-        display: inline-block;
-        width: 100px;  /* Uniform width */
-        height: 40px;  /* Uniform height */
-        line-height: 40px;  /* Vertical alignment for text */
-        text-align: center;  /* Center-align text */
-        margin: 5px;  /* Spacing between boxes */
-    }
-
-    nav a:hover {
-        background-color: #2E7D32;  /* Keep the hover effect */
-    }
-}
-
-/* Ensure the footer also looks modern */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #2E7D32;
+.resume-download a {
+    display: inline-flex; /* Use inline-flex to align icon and text */
+    align-items: center; /* Center icon and text vertically */
+    padding: 10px 20px; /* Decreased padding for smaller size */
+    background-color: #FF4081; /* Pink */
     color: white;
-    margin-top: 50px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em; /* Adjusted font size */
+    transition: background-color 0.4s, transform 0.4s;
+}
+
+.resume-download a:hover {
+    background-color: #D5006D; /* Darker Pink */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Social Media Icons */
+.social-links {
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
+.social-links a {
+    margin: 0 15px; /* Adjust margin for spacing */
+    font-size: 3.5em; /* Increased icon size for visibility */
+    color: #FFEB3B; /* Bright Yellow for icons */
+    transition: transform 0.4s, color 0.4s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    color: #FFC107; /* Darker Yellow on hover */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
 }

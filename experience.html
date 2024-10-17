@@ -8,12 +8,19 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <!-- Header with Navigation -->
     <header>
         <h1>Experience</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="education.html">Education</a>
-            <a href="skills.html">Skills</a>
+            <a href="index.html">
+                <i class="fa fa-home"></i> Home
+            </a>
+            <a href="education.html">
+                <i class="fa fa-graduation-cap"></i> Education
+            </a>
+            <a href="skills.html">
+                <i class="fa fa-cogs"></i> Skills
+            </a>
         </nav>
     </header>
 
@@ -24,16 +31,18 @@
             <p>Electrical Engineer</p>
         </div>
         <div class="popup" id="popup-evs">
-            <h3>EVS Industrial Automation - Work Details</h3>
-            <ul>
-                <li>Plc control panel wiring and commissioning</li>
-                <li>Programming, automation support</li>
-                <li>BOM making and SLD wiring</li>
-                <li>Manage budgets and resources</li>
-                <li>HMI, SCADA designing</li>
-                <li>Skills: Wincc, Tia portal, GXworks, WPLSoft, HMI, VFD, SERVO</li>
-            </ul>
-            <button class="close-popup" onclick="togglePopup('popup-evs')">Close</button>
+            <div class="popup-content">
+                <h3>EVS Industrial Automation - Work Details</h3>
+                <ul>
+                    <li>Plc control panel wiring and commissioning</li>
+                    <li>Programming, automation support</li>
+                    <li>BOM making and SLD wiring</li>
+                    <li>Manage budgets and resources</li>
+                    <li>HMI, SCADA designing</li>
+                    <li>Skills: Wincc, Tia portal, GXworks, WPLSoft, HMI, VFD, SERVO</li>
+                </ul>
+                <button class="close-popup" onclick="togglePopup('popup-evs')">Close</button>
+            </div>
         </div>
 
         <div class="experience-item" onclick="togglePopup('popup-tvs')">
@@ -41,16 +50,18 @@
             <p>Electrical - Maintenance</p>
         </div>
         <div class="popup" id="popup-tvs">
-            <h3>TVS Srichakra Limited - Work Details</h3>
-            <ul>
-                <li>Inspecting electrical systems</li>
-                <li>Troubleshooting system failures</li>
-                <li>Planning and scheduling maintenance</li>
-                <li>Installing and modifying systems</li>
-                <li>Improving production process</li>
-                <li>Skills: PLC programming, Team Lead, Supervising</li>
-            </ul>
-            <button class="close-popup" onclick="togglePopup('popup-tvs')">Close</button>
+            <div class="popup-content">
+                <h3>TVS Srichakra Limited - Work Details</h3>
+                <ul>
+                    <li>Inspecting electrical systems</li>
+                    <li>Troubleshooting system failures</li>
+                    <li>Planning and scheduling maintenance</li>
+                    <li>Installing and modifying systems</li>
+                    <li>Improving production process</li>
+                    <li>Skills: PLC programming, Team Lead, Supervising</li>
+                </ul>
+                <button class="close-popup" onclick="togglePopup('popup-tvs')">Close</button>
+            </div>
         </div>
 
         <div class="experience-item" onclick="togglePopup('popup-prayagaa')">
@@ -58,15 +69,17 @@
             <p>Trainee Engineer - Tendering Dept.</p>
         </div>
         <div class="popup" id="popup-prayagaa">
-            <h3>Prayagaa Enterprises - Work Details</h3>
-            <ul>
-                <li>Examining tender documents, BOQs, SLD</li>
-                <li>Preparation of quotations and invoices</li>
-                <li>Addressing pre and post-tender queries</li>
-                <li>Coordination with clients and engineers</li>
-                <li>Skills: MS Office, Documentation, SLD</li>
-            </ul>
-            <button class="close-popup" onclick="togglePopup('popup-prayagaa')">Close</button>
+            <div class="popup-content">
+                <h3>Prayagaa Enterprises - Work Details</h3>
+                <ul>
+                    <li>Examining tender documents, BOQs, SLD</li>
+                    <li>Preparation of quotations and invoices</li>
+                    <li>Addressing pre and post-tender queries</li>
+                    <li>Coordination with clients and engineers</li>
+                    <li>Skills: MS Office, Documentation, SLD</li>
+                </ul>
+                <button class="close-popup" onclick="togglePopup('popup-prayagaa')">Close</button>
+            </div>
         </div>
     </section>
 </body>

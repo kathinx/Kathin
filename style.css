@@ -73,20 +73,31 @@ nav a:hover {
 
 /* Resume Download Button */
 /* Resume Download Button */
+.resume-download {
+    margin: 20px 0; /* Added margin to separate from navigation */
+}
+
 .resume-download a {
-    display: inline-block;
-    padding: 8px 15px; /* Decreased padding for smaller size */
+    display: inline-flex; /* Use inline-flex to align icon and text */
+    align-items: center; /* Center icon and text vertically */
+    padding: 10px 20px; /* Decreased padding for smaller size */
     background-color: #FF4081; /* Pink */
     color: white;
     text-decoration: none;
-    border-radius: 3px;
-    font-size: 0.8em; /* Adjusted font size */
+    border-radius: 5px;
+    font-size: 1.2em; /* Adjusted font size */
     transition: background-color 0.4s, transform 0.4s;
 }
 
 .resume-download a:hover {
     background-color: #D5006D; /* Darker Pink */
     transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Adjust icon size */
+.resume-download a i {
+    font-size: 0.9em; /* Icon size */
+    margin-right: 5px; /* Space between icon and text */
 }
 
 /* Social Media Icons */

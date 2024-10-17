@@ -99,3 +99,39 @@ footer {
 .social-links a:hover {
     color: #4CAF50; /* Change to green on hover */
 }
+
+/* Style for social media icons */
+.social-links {
+    margin: 20px 0;
+}
+
+.social-links a {
+    margin: 0 15px;
+    font-size: 2em;
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #4CAF50; /* Change to green on hover */
+}
+
+/* Style for resume download button */
+.resume-download {
+    margin-top: 20px;
+}
+
+.resume-download a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.resume-download a:hover {
+    background-color: #388E3C;
+}

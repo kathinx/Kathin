@@ -1,155 +1,136 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap');
-
-/* Global Styles */
+/* General body styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #FFEB3B, #FFC107); /* Dynamic yellow gradient background */
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); /* Dynamic gradient background */
     color: #333;
-    overflow-y: auto; /* Allow vertical scrolling */
 }
 
-/* Header Styles */
+/* Header styles */
 header {
     text-align: center;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 40px 0; /* Adjusted padding to remove side gaps */
-    width: 100%; /* Ensure full-width */
-    z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
 }
 
-/* Highlighted Headings */
-h1 {
-    color: #FF4081;
-    font-size: 4em;
-    margin: 20px 0;
+/* Header title */
+header h1 {
+    font-size: 3.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px #ecf0f1;
 }
 
-h2 {
-    color: #FF5722;
-    margin: 30px 0;
-    padding: 10px;
-    border-bottom: 2px solid #FFC107;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 5px;
+header p {
+    font-size: 1.2em;
+    color: #34495e;
 }
 
-/* Section Styles */
+/* Card styles for sections */
 .card {
-    width: 90%; /* Set the width to cover most of the screen */
-    margin: 15px auto; /* Center the card horizontally */
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
-/* Links in Navigation */
-/* Navigation Links */
-nav a {
-    color: #FF4081; /* Default color */
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    display: inline-flex; /* Flexbox for aligning icon and text */
-    align-items: center;
-    font-size: 1.3em;
-    transition: background-color 0.4s, transform 0.4s;
+.card h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #e74c3c;
 }
 
-/* Navigation Box Styles */
-.nav-box {
-    display: inline-block; /* Display the boxes inline */
-    padding: 15px;
-    margin: 10px; /* Space between the boxes */
-    background-color: #f1f1f1; /* Light background color */
-    border-radius: 10px; /* Rounded corners for the box */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+.card p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #2c3e50;
 }
 
-.nav-box:hover {
-    transform: translateY(-10px); /* Lift effect on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-    background-color: #FFEB3B; /* Bright background color on hover */
+/* Contact information card */
+.contact p {
+    font-size: 1.1em;
+    line-height: 1.6;
 }
 
-/* Navigation Links */
-nav a {
-    color: #333; /* Default text color */
-    padding: 10px;
-    display: inline-flex; /* Align icon and text */
-    align-items: center;
-    text-decoration: none; /* Remove underline */
-    font-size: 1.5em;
-    transition: color 0.3s ease-in-out;
-}
-
-nav a i {
-    margin-right: 10px; /* Space between icon and text */
-    font-size: 1.5em;
-    transition: color 0.3s ease-in-out; /* Smooth transition for icon color */
-}
-
-/* Icon and Text Colors */
-.nav-box:nth-child(1) a i {
-    color: #FF4081; /* Pink for Experience icon */
-}
-
-.nav-box:nth-child(2) a i {
-    color: #FFC107; /* Yellow for Education icon */
-}
-
-.nav-box:nth-child(3) a i {
-    color: #4CAF50; /* Green for Skills icon */
-}
-
-/* Hover Effect for Icons and Text */
-.nav-box:hover a i, .nav-box:hover a {
-    color: #333; /* Text and icon change to dark gray on hover */
-}
-
-
-.resume-download a {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #FF4081;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    transition: background-color 0.4s, transform 0.4s;
-}
-
-.resume-download a:hover {
-    background-color: #D5006D;
-    transform: scale(1.05);
-}
-
-/* Social Media Icons */
+/* Social media icons */
 .social-links {
-    margin: 20px 0;
+    margin-top: 20px;
 }
 
 .social-links a {
+    font-size: 2em;
+    color: #2c3e50;
     margin: 0 15px;
-    font-size: 3.5em;
-    color: #FFEB3B;
-    transition: transform 0.4s, color 0.4s;
+    transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    transform: scale(1.2);
-    color: #FFC107;
+    color: #e74c3c; /* Color change on hover */
 }
 
-/* Smooth Scroll */
-html {
-    scroll-behavior: smooth;
+/* Resume download button */
+.resume-download a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2ecc71;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.resume-download a:hover {
+    background-color: #27ae60;
+}
+
+/* Navigation bar styling */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.nav-box {
+    margin: 10px;
+}
+
+nav a {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #2c3e50;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #f39c12;
+    color: white;
+    transform: translateY(-5px);
+}
+
+nav a i {
+    margin-right: 8px;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-bottom: 15px;
+        padding: 12px 20px;
+    }
 }

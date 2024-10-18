@@ -75,7 +75,7 @@ nav {
 }
 
 .nav-box a {
-    color: #003135; /* Darker font color */
+    color: #FFCC00; /* Darker font color */
     text-decoration: none;
     font-size: 1.2em;
 }
@@ -109,7 +109,7 @@ nav {
 /* Job role color */
 .experience-item p {
     font-size: 1.1em;
-    color: #0FFCBE; /* Bright color for job role */
+    color: #970747; /* Bright color for job role */
 }
 
 /* Popup styling - lighter background and improved font visibility */

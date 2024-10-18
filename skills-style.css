@@ -5,7 +5,7 @@ body {
     padding: 0;
     background: linear-gradient(135deg, #B71C1C, #FF6F61); /* Blue raspberry gradient */
     color: #333;
-    position: relative; 
+    position: relative;
 }
 
 /* Header styles */
@@ -74,7 +74,6 @@ nav {
     color: #003135;
     padding: 15px;
     margin: 20px auto;
-    cursor: pointer;
     border-radius: 12px;
     max-width: 800px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -96,7 +95,7 @@ nav {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Specific styles */
+/* Explanation styles */
 .explanation {
     display: none; /* Initially hidden */
     font-size: 0.9em; /* Smaller size for explanations */

@@ -96,11 +96,16 @@ nav {
 }
 
 /* Explanation styles */
+/* Other styles remain unchanged */
+
+/* Explanation styles */
 .explanation {
     display: none; /* Initially hidden */
     font-size: 0.9em; /* Smaller size for explanations */
     color: #970747; /* Color for explanations */
+    margin-top: 7px; /* Add space between skill and explanation */
 }
+
 
 /* Subheading styles */
 h2 {

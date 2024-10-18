@@ -1,9 +1,9 @@
-/* General body styles for a bright, pink-themed background */
+/* General body styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #ffebf7 0%, #ffd1e8 100%); /* Soft pink gradient background */
+    background: linear-gradient(135deg, #ffebf7 0%, #ffd1e8 100%); /* Light pink background */
     color: #333;
     position: relative;
     overflow-x: hidden;
@@ -29,7 +29,7 @@ body::before {
 body::after {
     bottom: -200px;
     right: -150px;
-    background: radial-gradient(circle, #ff9a9e 0%, #fecfef 100%); /* Soft pink tertiary tones */
+    background: radial-gradient(circle, #ff9a9e 0%, #fecfef 100%); /* Pink tertiary tones */
 }
 
 /* Full-width layout on desktop */
@@ -37,7 +37,7 @@ header, .experience-item, nav {
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
-    z-index: 1; /* Ensure content is above background */
+    z-index: 1;
     position: relative;
 }
 
@@ -49,12 +49,12 @@ header {
 
 header h1 {
     font-size: 3em;
-    color: #d6336c; /* Deep pink color */
+    color: #003135; /* Darker color for visibility */
     margin-bottom: 10px;
-    text-shadow: 2px 2px #f8d7da;
+    text-shadow: 2px 2px #afddes;
 }
 
-/* Navigation bar styling */
+/* Navigation bar styling - with the provided colors */
 nav {
     display: flex;
     justify-content: center;
@@ -69,27 +69,27 @@ nav {
     align-items: center;
     justify-content: center;
     border-radius: 12px;
-    background: linear-gradient(135deg, #ffd1e8 0%, #ffc3c7 100%);
+    background-color: #024950; /* Provided color */
     transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 5px 10px rgba(255, 192, 203, 0.3); /* Light shadow */
+    box-shadow: 0 5px 10px rgba(0, 49, 53, 0.3); /* Dark shadow */
 }
 
 .nav-box a {
-    color: #d6336c; /* Deep pink text */
+    color: #afddes; /* Light color */
     text-decoration: none;
     font-size: 1.2em;
 }
 
 .nav-box:hover {
-    background: linear-gradient(135deg, #ffc3c7 0%, #fbc3eb 100%);
+    background-color: #0fa4af; /* Provided color for hover */
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(255, 192, 203, 0.4);
+    box-shadow: 0 10px 20px rgba(0, 49, 53, 0.4);
 }
 
 /* Experience item styling */
 .experience-item {
     background-color: rgba(255, 255, 255, 0.8);
-    color: #333;
+    color: #003135;
     padding: 15px;
     margin: 20px auto;
     cursor: pointer;
@@ -97,7 +97,7 @@ nav {
     border-radius: 12px;
     max-width: 800px;
     position: relative;
-    box-shadow: 0 5px 10px rgba(255, 182, 193, 0.3); /* Light pink shadow */
+    box-shadow: 0 5px 10px rgba(255, 182, 193, 0.3);
 }
 
 .experience-item:hover {
@@ -106,17 +106,17 @@ nav {
     box-shadow: 0 10px 20px rgba(255, 182, 193, 0.4);
 }
 
-/* Popup styling */
+/* Popup styling - improve font visibility */
 .popup {
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(135deg, #ffccd5 0%, #fce1e4 100%);
-    color: #d6336c; /* Soft pink text */
+    background-color: #964736; /* Provided color */
+    color: white;
     padding: 30px;
-    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.5);
+    box-shadow: 0 10px 30px rgba(150, 71, 54, 0.5); /* Softer shadow */
     z-index: 10;
     border-radius: 15px;
     width: 80%;
@@ -132,8 +132,8 @@ nav {
 .popup h3 {
     margin-top: 0;
     font-size: 1.8em;
-    color: #d6336c;
-    text-shadow: 2px 2px #f8d7da;
+    color: #afddes; /* Provided light color */
+    text-shadow: 2px 2px #003135;
 }
 
 .popup ul {
@@ -144,8 +144,7 @@ nav {
 .popup li {
     margin-bottom: 15px;
     font-size: 1.2em;
-    color: #d6336c;
-    position: relative;
+    color: #afddes; /* Provided color for better visibility */
 }
 
 .popup li::before {
@@ -156,13 +155,13 @@ nav {
 
 .popup li.skill-highlight {
     font-weight: bold;
-    color: #f06595; /* Brighter pink for skills */
+    color: #f06595;
     text-shadow: 1px 1px 3px #f8d7da;
 }
 
 /* Close button styling */
 .close-popup {
-    background-color: #f06595;
+    background-color: #0fa4af; /* Provided color */
     color: white;
     border: none;
     padding: 12px 25px;
@@ -173,7 +172,7 @@ nav {
 }
 
 .close-popup:hover {
-    background-color: #d6336c;
+    background-color: #024950; /* Provided color */
 }
 
 /* Responsive styles for mobile */
@@ -191,3 +190,4 @@ nav {
         padding: 12px 20px;
     }
 }
+

@@ -54,7 +54,7 @@ header h1 {
     text-shadow: 2px 2px #afddes;
 }
 
-/* Navigation bar styling - with the provided colors */
+/* Navigation bar styling */
 nav {
     display: flex;
     justify-content: center;
@@ -69,19 +69,19 @@ nav {
     align-items: center;
     justify-content: center;
     border-radius: 12px;
-    background-color: #024950; /* Provided color */
+    background-color: #003135; /* Dark background for visibility */
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 5px 10px rgba(0, 49, 53, 0.3); /* Dark shadow */
 }
 
 .nav-box a {
-    color: #afddes; /* Light color */
+    color: #ffffff; /* Lighter font color for visibility */
     text-decoration: none;
     font-size: 1.2em;
 }
 
 .nav-box:hover {
-    background-color: #0fa4af; /* Provided color for hover */
+    background-color: #024950; /* Slightly lighter color for hover */
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 49, 53, 0.4);
 }
@@ -104,6 +104,12 @@ nav {
     background-color: rgba(255, 255, 255, 1);
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(255, 182, 193, 0.4);
+}
+
+/* Job role color */
+.experience-item p {
+    font-size: 1.1em;
+    color: #0fa4af; /* Bright color for job role */
 }
 
 /* Popup styling - lighter background and improved font visibility */

@@ -3,7 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #fff5e1, #ffebc5); /* Light gradient background with warm tones */
+    background: linear-gradient(135deg, #B71C1C, #FF6F61); /* Blue raspberry gradient with warm tones */
     color: #333;
     position: relative;
     overflow-x: hidden;
@@ -53,9 +53,9 @@ header h1 {
 }
 
 .social-links a {
-    color: #0FFCBE; /* Bright coral color for social icons */
+    color: #ff6f61; /* Bright coral color for social icons */
     margin: 0 10px;
-    font-size: 4em; /* Increased size for icons */
+    font-size: 2em; /* Increased size for icons */
     transition: transform 0.3s, color 0.3s; /* Add hover effect */
 }
 

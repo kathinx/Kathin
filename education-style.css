@@ -3,9 +3,9 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #ffebf7 0%, #ffd1e8 100%);
+    background: linear-gradient(135deg, #ffebf7 0%, #ffd1e8 100%); /* Light pink background */
     color: #333;
-    position: relative; 
+    position: relative;
 }
 
 /* Header styles */
@@ -75,6 +75,13 @@ nav {
     margin: 5px auto;
     max-width: 800px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Subheading styles */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #003135; /* Darker color for visibility */
 }
 
 /* Responsive styles for mobile */

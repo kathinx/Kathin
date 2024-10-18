@@ -3,11 +3,11 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #ffebf7 0%, #ffd1e8 100%); /* Light pink background */
+    background: linear-gradient(135deg, #f5f7fa, #e1e5e9); /* Light gradient background */
     color: #333;
     position: relative;
 }
- 
+
 /* Header styles */
 header {
     text-align: center;
@@ -17,6 +17,19 @@ header {
 header h1 {
     font-size: 3em;
     color: #003135; /* Darker color for visibility */
+}
+
+/* Social Links */
+.social-links {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.social-links a {
+    color: #0fa4af; /* Color for social icons */
+    margin: 0 10px;
+    font-size: 1.5em;
 }
 
 /* Navigation bar styling */
@@ -84,9 +97,28 @@ h2 {
     color: #003135; /* Darker color for visibility */
 }
 
+/* Specific styles */
+.year {
+    font-weight: bold;
+    color: #0fa4af; /* Color for completion year */
+}
+
+.institute, .percentage, .location {
+    color: #003135; /* Darker color for visibility */
+}
+
+.specifics {
+    text-transform: uppercase; /* Full capital letters for course specifics */
+}
+
 /* Responsive styles for mobile */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.5em;
+    }
+
+    .social-links {
+        top: 10px;
+        right: 10px;
     }
 }

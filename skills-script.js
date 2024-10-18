@@ -7,4 +7,5 @@ function hideExplanation(id) {
     const explanation = document.getElementById(id);
     explanation.style.display = 'none'; // Hide the explanation
 }
+
  

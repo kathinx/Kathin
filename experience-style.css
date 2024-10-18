@@ -69,21 +69,28 @@ nav {
     align-items: center;
     justify-content: center;
     border-radius: 12px;
-    background-color: #0fa4af; /* Lighter background for buttons */
+    background-color: #FFFDF2; /* Light navigation background */
     transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 5px 10px rgba(0, 164, 175, 0.3); /* Light shadow */
+    box-shadow: 0 5px 10px rgba(255, 253, 242, 0.3); /* Light shadow */
 }
 
 .nav-box a {
-    color: #FFCC00; /* Darker font color */
+    color: #003135; /* Darker font color */
     text-decoration: none;
     font-size: 1.2em;
 }
 
 .nav-box:hover {
-    background-color: #FFFDF2; /* Lighter hover effect */
+    background-color: #f4f1de; /* Hover effect */
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 164, 175, 0.4);
+    box-shadow: 0 10px 20px rgba(255, 253, 242, 0.4);
+}
+
+/* Icon color */
+nav i {
+    color: #970747; /* Cool color for icons */
+    margin-right: 10px;
+    font-size: 1.5em;
 }
 
 /* Experience item styling */
@@ -109,7 +116,7 @@ nav {
 /* Job role color */
 .experience-item p {
     font-size: 1.1em;
-    color: #970747; /* Bright color for job role */
+    color: #970747; /* Darker pink color for job role */
 }
 
 /* Popup styling - lighter background and improved font visibility */

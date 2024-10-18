@@ -53,9 +53,9 @@ header h1 {
 }
 
 .social-links a {
-    color: #ff6f61; /* Bright coral color for social icons */
+    color: #0FFCBE; /* Bright coral color for social icons */
     margin: 0 10px;
-    font-size: 2em; /* Increased size for icons */
+    font-size: 4em; /* Increased size for icons */
     transition: transform 0.3s, color 0.3s; /* Add hover effect */
 }
 

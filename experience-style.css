@@ -1,21 +1,21 @@
-/* General body styles for light mode (default) */
+/* General body styles for a bright, pink-themed background */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); /* Light and bright gradient */
+    background: linear-gradient(135deg, #ffebf7 0%, #ffd1e8 100%); /* Soft pink gradient background */
     color: #333;
     position: relative;
     overflow-x: hidden;
 }
 
-/* Abstract background design for light mode */
+/* Abstract background design */
 body::before, body::after {
     content: '';
     position: absolute;
-    width: 400px;
-    height: 400px;
-    background: rgba(255, 223, 186, 0.3);
+    width: 450px;
+    height: 450px;
+    background: rgba(255, 192, 203, 0.4); /* Light pink overlay */
     border-radius: 50%;
     z-index: 0;
 }
@@ -23,13 +23,13 @@ body::before, body::after {
 body::before {
     top: -200px;
     left: -150px;
-    background: radial-gradient(circle, #ffafbd 0%, #ffc3a0 100%);
+    background: radial-gradient(circle, #ffafbd 0%, #ffc3a0 100%); /* Pink radial gradient */
 }
 
 body::after {
     bottom: -200px;
     right: -150px;
-    background: radial-gradient(circle, #43e97b 0%, #38f9d7 100%);
+    background: radial-gradient(circle, #ff9a9e 0%, #fecfef 100%); /* Soft pink tertiary tones */
 }
 
 /* Full-width layout on desktop */
@@ -49,9 +49,9 @@ header {
 
 header h1 {
     font-size: 3em;
-    color: #2c3e50;
+    color: #d6336c; /* Deep pink color */
     margin-bottom: 10px;
-    text-shadow: 2px 2px #ecf0f1;
+    text-shadow: 2px 2px #f8d7da;
 }
 
 /* Navigation bar styling */
@@ -69,26 +69,26 @@ nav {
     align-items: center;
     justify-content: center;
     border-radius: 12px;
-    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    background: linear-gradient(135deg, #ffd1e8 0%, #ffc3c7 100%);
     transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(255, 192, 203, 0.3); /* Light shadow */
 }
 
 .nav-box a {
-    color: white;
+    color: #d6336c; /* Deep pink text */
     text-decoration: none;
     font-size: 1.2em;
 }
 
 .nav-box:hover {
-    background: linear-gradient(135deg, #ff9a9e 0%, #fbc2eb 100%);
+    background: linear-gradient(135deg, #ffc3c7 0%, #fbc3eb 100%);
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(255, 192, 203, 0.4);
 }
 
 /* Experience item styling */
 .experience-item {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.8);
     color: #333;
     padding: 15px;
     margin: 20px auto;
@@ -97,13 +97,13 @@ nav {
     border-radius: 12px;
     max-width: 800px;
     position: relative;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(255, 182, 193, 0.3); /* Light pink shadow */
 }
 
 .experience-item:hover {
     background-color: rgba(255, 255, 255, 1);
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(255, 182, 193, 0.4);
 }
 
 /* Popup styling */
@@ -113,10 +113,10 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
-    color: white;
+    background: linear-gradient(135deg, #ffccd5 0%, #fce1e4 100%);
+    color: #d6336c; /* Soft pink text */
     padding: 30px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.5);
     z-index: 10;
     border-radius: 15px;
     width: 80%;
@@ -132,8 +132,8 @@ nav {
 .popup h3 {
     margin-top: 0;
     font-size: 1.8em;
-    color: #fff;
-    text-shadow: 2px 2px #c0392b;
+    color: #d6336c;
+    text-shadow: 2px 2px #f8d7da;
 }
 
 .popup ul {
@@ -144,25 +144,25 @@ nav {
 .popup li {
     margin-bottom: 15px;
     font-size: 1.2em;
-    color: #f1c40f;
+    color: #d6336c;
     position: relative;
 }
 
 .popup li::before {
     content: '★';
-    color: #e67e22;
+    color: #f783ac;
     margin-right: 8px;
 }
 
 .popup li.skill-highlight {
     font-weight: bold;
-    color: #f39c12;
-    text-shadow: 1px 1px 3px #e74c3c;
+    color: #f06595; /* Brighter pink for skills */
+    text-shadow: 1px 1px 3px #f8d7da;
 }
 
 /* Close button styling */
 .close-popup {
-    background-color: #e74c3c;
+    background-color: #f06595;
     color: white;
     border: none;
     padding: 12px 25px;
@@ -173,7 +173,7 @@ nav {
 }
 
 .close-popup:hover {
-    background-color: #c0392b;
+    background-color: #d6336c;
 }
 
 /* Responsive styles for mobile */
@@ -191,4 +191,3 @@ nav {
         padding: 12px 20px;
     }
 }
-

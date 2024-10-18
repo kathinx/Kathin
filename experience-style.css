@@ -3,10 +3,33 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%); /* Light and bright gradient */
     color: #333;
     position: relative;
     overflow-x: hidden;
+}
+
+/* Abstract background design for light mode */
+body::before, body::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 223, 186, 0.3);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+body::before {
+    top: -200px;
+    left: -150px;
+    background: radial-gradient(circle, #ffafbd 0%, #ffc3a0 100%);
+}
+
+body::after {
+    bottom: -200px;
+    right: -150px;
+    background: radial-gradient(circle, #43e97b 0%, #38f9d7 100%);
 }
 
 /* Full-width layout on desktop */
@@ -14,21 +37,21 @@ header, .experience-item, nav {
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
+    z-index: 1; /* Ensure content is above background */
+    position: relative;
 }
 
 /* Header styles */
 header {
     text-align: center;
     padding: 30px 20px;
-    z-index: 1;
-    position: relative;
 }
 
-/* Header title */
 header h1 {
     font-size: 3em;
     color: #2c3e50;
     margin-bottom: 10px;
+    text-shadow: 2px 2px #ecf0f1;
 }
 
 /* Navigation bar styling */
@@ -36,7 +59,6 @@ nav {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    z-index: 1;
 }
 
 .nav-box {
@@ -46,9 +68,10 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
     transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-box a {
@@ -58,8 +81,9 @@ nav {
 }
 
 .nav-box:hover {
-    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    background: linear-gradient(135deg, #ff9a9e 0%, #fbc2eb 100%);
     transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Experience item styling */
@@ -70,7 +94,7 @@ nav {
     margin: 20px auto;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    border-radius: 10px;
+    border-radius: 12px;
     max-width: 800px;
     position: relative;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -79,6 +103,7 @@ nav {
 .experience-item:hover {
     background-color: rgba(255, 255, 255, 1);
     transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Popup styling */
@@ -88,7 +113,7 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
     color: white;
     padding: 30px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -170,47 +195,49 @@ nav {
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
     body {
-        background: linear-gradient(135deg, #2c3e50 0%, #4a4a4a 100%); /* Darker gradient for dark mode */
-        color: #ecf0f1; /* Light text */
+        background: linear-gradient(135deg, #141E30 0%, #243B55 100%);
+        color: #ecf0f1;
+    }
+
+    /* Dark mode abstract background */
+    body::before {
+        background: radial-gradient(circle, #ff512f 0%, #dd2476 100%);
+    }
+
+    body::after {
+        background: radial-gradient(circle, #43e97b 0%, #38f9d7 100%);
     }
 
     header h1 {
-        color: #ecf0f1; /* Light title */
+        color: #ecf0f1;
+        text-shadow: 2px 2px #2c3e50;
     }
 
     .experience-item {
-        background-color: rgba(50, 50, 50, 0.9); /* Dark background for experience items */
-        color: #ecf0f1; /* Light text */
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7); /* Darker shadow */
+        background-color: rgba(45, 45, 45, 0.9);
+        color: #ecf0f1;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
     }
 
     .experience-item:hover {
-        background-color: rgba(50, 50, 50, 1); /* Slightly lighter on hover */
+        background-color: rgba(55, 55, 55, 1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
     }
 
     .popup {
-        background: linear-gradient(135deg, #2c3e50 0%, #4a4a4a 100%); /* Darker popup background */
-        color: #ecf0f1; /* Light text */
+        background: linear-gradient(135deg, #141E30 0%, #243B55 100%);
+        color: #ecf0f1;
     }
 
     .popup h3 {
-        color: #e74c3c; /* Red title in dark mode */
+        color: #e74c3c;
     }
 
     .nav-box {
-        background: linear-gradient(135deg, #8e44ad, #2980b9); /* Vibrant nav background in dark mode */
+        background: linear-gradient(135deg, #8e44ad, #3498db);
     }
 
     .nav-box:hover {
-        background: linear-gradient(135deg, #9b59b6, #3498db); /* Brighter hover effect */
-    }
-
-    .close-popup {
-        background-color: #e74c3c;
-        color: white;
-    }
-
-    .close-popup:hover {
-        background-color: #c0392b;
+        background: linear-gradient(135deg, #9b59b6, #2980b9);
     }
 }

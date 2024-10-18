@@ -1,0 +1,85 @@
+/* General body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffebf7 0%, #ffd1e8 100%);
+    color: #333;
+    position: relative;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    color: #003135; /* Darker color for visibility */
+}
+
+/* Navigation bar styling */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.nav-box {
+    margin: 10px;
+    width: 160px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #FFFDF2; /* Light background for nav */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-box a {
+    color: #003135; /* Dark font color */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.nav-box:hover {
+    background-color: #0fa4af; /* Hover color */
+    transform: translateY(-5px);
+}
+
+/* Education and Course Card Styles */
+.education-card, .courses-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #003135;
+    padding: 15px;
+    margin: 20px auto;
+    cursor: pointer;
+    border-radius: 12px;
+    max-width: 800px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.education-card:hover, .courses-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Dropdown Styles */
+.dropdown {
+    display: none; /* Initially hidden */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px auto;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+}

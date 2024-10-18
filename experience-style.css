@@ -81,7 +81,7 @@ nav {
 }
 
 .nav-box:hover {
-    background-color: #afddes; /* Lighter hover effect */
+    background-color: #FFFDF2; /* Lighter hover effect */
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 164, 175, 0.4);
 }

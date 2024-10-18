@@ -5,7 +5,7 @@ body {
     padding: 0;
     background: linear-gradient(135deg, #ffebf7 0%, #ffd1e8 100%);
     color: #333;
-    position: relative;
+    position: relative; 
 }
 
 /* Header styles */

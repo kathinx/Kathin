@@ -3,10 +3,10 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #B71C1C, #FF6F61); /* Blue raspberry gradient */
+    background: linear-gradient(135deg, #FFDEB3, #FFE5E5); /* Light gradient background with warm tones */
     color: #333;
     position: relative;
-} 
+}
 
 /* Header styles */
 header {
@@ -107,6 +107,23 @@ h2 {
     text-align: center;
     margin-top: 20px;
     color: #003135; /* Darker color for visibility */
+}
+
+/* List styling for soft skills */
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease; /* Add hover effect */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+ul li:hover {
+    background-color: rgba(255, 192, 203, 0.5); /* Light pink background on hover */
 }
 
 /* Responsive styles for mobile */

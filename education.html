@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education - Kajendran G</title>
     <link rel="stylesheet" href="education-style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="education-script.js" defer></script> <!-- Link to the dropdown script --> 
+    <script src="education-script.js" defer></script> <!-- Link to the dropdown script -->
 </head>
 <body>
     <header>
@@ -32,44 +32,57 @@
     </header>
 
     <section>
+        <h2>Education</h2> <!-- Subheading for Education -->
+        
         <div class="education-card" onclick="toggleDropdown('dropdown-education1')">
-            <h2>BHARATH NIKETAN ENGINEERING COLLEGE</h2>
-            <p>BE - Electrical and Electronics Engineering (June 2022)</p>
+            <h3>BE - Electrical and Electronics Engineering</h3>
+            <p>Completion Date: June 2022</p>
         </div>
         <div class="dropdown" id="dropdown-education1">
+            <p>Institute: BHARATH NIKETAN ENGINEERING COLLEGE</p>
             <p>Percentage: 72%</p>
+            <p>Project Details: NOVEL DUAL DC PORT DYNAMIC VOLTAGE RESTORER WITH REDUCED RATING INTEGRATED DC-DC CONVERTER FOR WIDE RANGE VOLTAGE SAG COMPENSATION</p>
+            <p>Location: THENI</p>
         </div>
 
         <div class="education-card" onclick="toggleDropdown('dropdown-education2')">
-            <h2>VICTORIA MEMORIAL GOVERNMENT BOYS HIGHER SECONDARY SCHOOL</h2>
-            <p>Higher Secondary School Certificate (HSC) - May 2018</p>
+            <h3>Higher Secondary School Certificate (HSC)</h3>
+            <p>Completion Date: May 2018</p>
         </div>
         <div class="dropdown" id="dropdown-education2">
+            <p>Institute: VICTORIA MEMORIAL GOVERNMENT BOYS HIGHER SECONDARY SCHOOL</p>
             <p>Percentage: 66.75%</p>
+            <p>Location: PERIYAKULAM</p>
         </div>
 
         <div class="education-card" onclick="toggleDropdown('dropdown-education3')">
-            <h2>VICTORIA MEMORIAL GOVERNMENT BOYS HIGHER SECONDARY SCHOOL</h2>
-            <p>Secondary School Leaving Certificate (SSLC) - May 2016</p>
+            <h3>Secondary School Leaving Certificate (SSLC)</h3>
+            <p>Completion Date: May 2016</p>
         </div>
         <div class="dropdown" id="dropdown-education3">
+            <p>Institute: VICTORIA MEMORIAL GOVERNMENT BOYS HIGHER SECONDARY SCHOOL</p>
             <p>Percentage: 87%</p>
+            <p>Location: PERIYAKULAM</p>
         </div>
 
+        <h2>Courses</h2> <!-- Subheading for Courses -->
+
         <div class="courses-card" onclick="toggleDropdown('dropdown-course1')">
-            <h2>COMPUTER SOFTWARE COLLEGE (CSC)</h2>
-            <p>Diploma in Computer Application (DCA) - 2018</p>
+            <h3>Diploma in Computer Application (DCA)</h3>
+            <p>Year: 2018</p>
         </div>
         <div class="dropdown" id="dropdown-course1">
+            <p>Institute: COMPUTER SOFTWARE COLLEGE (CSC)</p>
             <p>Grade: C</p>
             <p>Specifics: Microsoft Word, Microsoft PowerPoint, Microsoft Excel, Programming Languages: C, C++, HTML, CSS, OOPs</p>
         </div>
 
         <div class="courses-card" onclick="toggleDropdown('dropdown-course2')">
-            <h2>UDEMY - PLC PROGRAMMING</h2>
+            <h3>PLC PROGRAMMING</h3>
             <p>Status: Pursuing</p>
         </div>
         <div class="dropdown" id="dropdown-course2">
+            <p>Platform: UDEMY</p>
             <p>Specifics: PLC Programming of Allen Bradley, Delta, Siemens, Omron & Schneider using LIVE Examples with HMI Interfacing, Ladder Logic Programming, PLC Wiring Concepts & Troubleshooting.</p>
         </div>
     </section>

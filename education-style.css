@@ -6,6 +6,32 @@ body {
     background: linear-gradient(135deg, #f5f7fa, #e1e5e9); /* Light gradient background */
     color: #333;
     position: relative;
+    overflow-x: hidden;
+}
+
+/* Abstract background designs */
+body::before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    left: -150px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 182, 193, 0.3);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    bottom: -150px;
+    right: -150px;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 192, 203, 0.3);
+    border-radius: 50%;
+    z-index: -1;
 }
 
 /* Header styles */
@@ -15,7 +41,7 @@ header {
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 3.2em; /* Slightly larger font size */
     color: #003135; /* Darker color for visibility */
 }
 
@@ -29,7 +55,7 @@ header h1 {
 .social-links a {
     color: #0fa4af; /* Color for social icons */
     margin: 0 10px;
-    font-size: 1.5em;
+    font-size: 1.7em; /* Increased size for icons */
 }
 
 /* Navigation bar styling */
@@ -54,7 +80,7 @@ nav {
 .nav-box a {
     color: #003135; /* Dark font color */
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.2em; /* Adjusted font size */
 }
 
 .nav-box:hover {
@@ -90,25 +116,26 @@ nav {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Subheading styles */
-h2 {
-    text-align: center;
-    margin-top: 20px;
-    color: #003135; /* Darker color for visibility */
-}
-
 /* Specific styles */
 .year {
     font-weight: bold;
     color: #0fa4af; /* Color for completion year */
 }
 
-.institute, .percentage, .location {
-    color: #003135; /* Darker color for visibility */
+.institute, .percentage, .location, .platform, .specifics {
+    color: #970747; /* Updated color for these elements */
+    font-size: 1.1em; /* Slightly larger font size */
 }
 
 .specifics {
     text-transform: uppercase; /* Full capital letters for course specifics */
+}
+
+/* Subheading styles */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #003135; /* Darker color for visibility */
 }
 
 /* Responsive styles for mobile */

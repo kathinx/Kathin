@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #B3D4FF, #E5F6FF); /* Light warm tone with blue shades */
-    color: #333;
+    color: #FFFACD;
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 

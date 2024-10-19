@@ -18,6 +18,23 @@ function alignNavigation() {
         }
     });
 }
+/* advice button */
+
+function showForm() {
+    document.getElementById("advice-form").style.display = "block";
+}
+
+function submitAdvice() {
+    const advice = document.getElementById("advice-text").value;
+    if(advice) {
+        const email = "your-email@example.com";
+        const whatsapp = "+919976507561"; // Replace with your WhatsApp number
+        window.open(`mailto:${email}?subject=Career Advice&body=${advice}`, '_blank');
+        window.open(`https://wa.me/${whatsapp}?text=${encodeURIComponent(advice)}`, '_blank');
+        document.getElementById("advice-form").style.display = "none";
+        document.getElementById("advice-text").value = ""; // Clear the text area
+    }
+}
 
 /* Run adjustments when DOM is loaded */
 document.addEventListener('DOMContentLoaded', () => {

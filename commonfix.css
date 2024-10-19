@@ -77,10 +77,12 @@ footer {
     padding: 10px;
     background-color: #FFFDF2; /* Light background */
     color: #333; /* Dark gray text */
-    position: relative; /* Change from fixed to relative */
-    bottom: 0;
+    position: relative; /* Ensure this is set to relative */
+    margin-top: 20px; /* Optional: add space above the footer */
+    clear: both; /* Ensures footer stays below floated elements */
     width: 100%;
 }
+
 
 /* Responsive adjustments */
 @media only screen and (max-width: 768px) {

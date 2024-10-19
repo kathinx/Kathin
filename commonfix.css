@@ -1,0 +1,49 @@
+/* Prevent horizontal scrolling in mobile view */
+body, html {
+    overflow-x: hidden;
+}
+
+/* Ensure navigation boxes are aligned properly */
+.nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-box a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Align icons and text in navigation boxes */
+.nav-box a i {
+    margin-right: 10px;
+}
+
+/* Ensure popups fit within the mobile screen */
+.popup {
+    max-width: 100%;
+    word-wrap: break-word; /* Prevent long text from overflowing */
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    .skills-card, .experience-card, .education-card {
+        width: 90%; /* Ensure content fits within mobile display */
+    }
+
+    .social-links a {
+        font-size: 2em; /* Adjust size for mobile */
+    }
+
+    header h1 {
+        font-size: 2.4em; /* Adjust title size for mobile */
+    }
+
+    .nav-box {
+        width: 120px;
+        height: 50px;
+    }
+}

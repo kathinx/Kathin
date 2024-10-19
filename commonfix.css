@@ -72,6 +72,16 @@ body, html {
     margin-bottom: 10px;
 }
 
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #FFFDF2; /* Light background */
+    color: #333; /* Dark gray text */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 /* Responsive adjustments */
 @media only screen and (max-width: 768px) {
     .skills-card, .experience-card, .education-card {

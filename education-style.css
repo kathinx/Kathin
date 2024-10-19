@@ -1,13 +1,17 @@
 /* General body styles */
 /* General body styles */
+/* General body styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #B3D4FF, #E5F6FF); /* Light warm tone with blue shades */
-    color: #FFFACD;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    color: #333;
+    overflow-x: hidden;
 }
+
+/* Other styles remain unchanged */
+
 
 /* Other styles remain unchanged */
 
